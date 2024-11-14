@@ -1,0 +1,36 @@
+/* Basic reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header styling */
+header {
+    position: relative; /* Ensures relative positioning for the social links */
+    background-color: #222;
+    height: 80px; /* Adjust header height */
+    padding: 0 20px;
+}
+
+/* Social media buttons */
+.social-links {
+    position: absolute; /* Absolute positioning within the header */
+    top: 10px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    display: flex; /* Horizontal alignment */
+    gap: 15px; /* Spacing between icons */
+}
+
+.social-links a img {
+    width: 50px; /* Adjusted size of the icons */
+    height: 50px;
+    border-radius: 50%; /* Makes the buttons circular */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effects */
+}
+
+.social-links a img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
